@@ -163,8 +163,6 @@ nav {
 
 }
 
-
-
 // left - nav
 
 @mixin ellips-img {
@@ -197,8 +195,6 @@ nav {
   /* Shadows/Gray Blue 30/3%/5b */
   box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.03);
 }
-
-
 
 .basic {
   display: flex;
@@ -267,9 +263,6 @@ nav {
 
 
 
-
-
-
   #card-data {
     padding: 30px;
     max-width: 516px;
@@ -283,9 +276,6 @@ nav {
   .cards1 {
     display: flex;
     gap: 30px;
-
-
-
 
     .main-card {
       width: 350px;
@@ -421,7 +411,6 @@ nav {
         background: linear-gradient(197deg, #3B3B3B 0%, #767676 100%);
       }
     }
-
   }
 
   .circle-graph {
@@ -504,8 +493,6 @@ nav {
 
             @include price();
 
-
-
             p {
               color: var(--gray-blue-grey-blue-70, #7D8FB3);
               font-size: 12px;
@@ -518,10 +505,6 @@ nav {
     }
 
   }
-
-
-
-
 
 
   //  right - section
@@ -540,16 +523,12 @@ nav {
     }
   }
 
-
-
-
   #right-section {
     padding: 30px;
     display: flex;
     flex-direction: column;
     gap: 40px;
     border-right: 2px solid var(--gray-blue-grey-blue-95, #EDEFF2);
-
 
     .account {
       text-align: center;
@@ -559,8 +538,6 @@ nav {
       gap: 20px;
 
       .account-top {
-
-
         display: flex;
         align-items: center;
         // justify-content: space-between;
@@ -601,7 +578,6 @@ nav {
 
         }
 
-
         .plus {
           @include icon ();
           background: var(--orange-orange, #F63);
@@ -622,7 +598,6 @@ nav {
         }
       }
     }
-
 
     .about-cards {
       .about-cards-top {
@@ -646,7 +621,6 @@ nav {
             @include dot (5px, 5px, rgb(221, 214, 214));
           }
         }
-
       }
 
       .about-cards-cards {
