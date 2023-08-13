@@ -2,7 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto";
+  font-family: "Roboto" ;
+}
+
+
+.container{
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+body{
+  background-color: #f9f9f6;
 }
 
 @mixin icon {
@@ -54,6 +64,7 @@ nav {
       ul {
         list-style: none;
         display: flex;
+        align-items: center;
         gap: 40px;
 
         a {

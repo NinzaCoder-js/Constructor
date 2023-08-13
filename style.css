@@ -5,6 +5,15 @@
   font-family: "Roboto";
 }
 
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #f9f9f6;
+}
+
 nav .navbar {
   display: flex;
   justify-content: space-between;
@@ -38,6 +47,7 @@ nav .navbar .links {
 nav .navbar .links ul {
   list-style: none;
   display: flex;
+  align-items: center;
   gap: 40px;
 }
 nav .navbar .links ul a {
