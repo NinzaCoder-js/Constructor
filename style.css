@@ -19,6 +19,8 @@ nav .navbar {
   justify-content: space-between;
   align-items: center;
   padding-top: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
   padding-bottom: 20px;
   border-bottom: 2px solid var(--gray-blue-grey-blue-95, #EDEFF2);
 }
@@ -58,18 +60,19 @@ nav .navbar .links ul a {
   font-weight: 700;
   padding: 3px;
 }
-nav .navbar .links ul .dots {
+nav .navbar .links ul .points {
   display: flex;
   align-items: center;
   gap: 3px;
 }
-nav .navbar .links ul .dots .another {
+nav .navbar .links ul .points .another {
   width: 5px;
   height: 5px;
   border-radius: 50px;
   background-color: #9e8f8f;
 }
 nav .navbar .search {
+  width: 298px;
   order: 3;
   display: flex;
   align-items: center;
@@ -87,15 +90,19 @@ nav .navbar .search input {
   font-style: normal;
   font-weight: 700;
 }
-nav .navbar .me {
+nav .navbar .account-circle {
   order: 5;
   display: flex;
   align-items: center;
   gap: 10px;
 }
-nav .navbar .me svg {
-  width: 30px;
-  height: 30px;
+nav .navbar .account-circle p {
+  color: #6B7A99;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px; /* 192.308% */
 }
 nav .navbar .profile {
   order: 6;
@@ -103,12 +110,6 @@ nav .navbar .profile {
   gap: 15px;
   align-items: center;
   padding-left: 30px;
-}
-nav .navbar .profile p {
-  color: var(--gray-blue-grey-blue-60, #6B7A99);
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 700;
 }
 nav .navbar .profile .images {
   display: flex;
@@ -217,8 +218,18 @@ nav .navbar .profile .images .red-dot {
   display: none;
 }
 .basic .cards1 {
+  position: relative;
   display: flex;
   gap: 30px;
+}
+.basic .cards1 .lineman {
+  position: absolute;
+  width: 2px;
+  height: 40px;
+  background-color: red;
+  left: 367px;
+  top: 65px;
+  border-radius: 1px;
 }
 .basic .cards1 .main-card {
   width: 350px;
@@ -352,7 +363,7 @@ nav .navbar .profile .images .red-dot {
 .basic .circle-graph .graph-groups {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 40px;
   padding: 15px;
   border-bottom: 2px solid var(--gray-blue-grey-blue-95, #EDEFF2);
 }
@@ -693,6 +704,9 @@ nav .navbar .profile .images .red-dot {
   font-style: normal;
   font-weight: 900;
 }
+.basic .cashback-menu .cashback-top .types ul .topman a {
+  color: var(--purple-purple, #83F);
+}
 .basic .cashback-menu .cashback-top .another {
   display: flex;
   gap: 3px;
@@ -784,26 +798,12 @@ nav .navbar .profile .images .red-dot {
 }
 .basic .cards {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 30px;
 }
-.basic .cards .item1 {
-  order: 1;
-}
-.basic .cards .item2 {
-  order: 2;
-}
-.basic .cards .item3 {
-  order: 3;
-}
-.basic .cards .item4 {
-  order: 4;
-}
-.basic .cards .item5 {
-  order: 5;
-}
-.basic .cards .item6 {
-  order: 6;
+.basic .cards .leto-card {
+  display: flex;
+  gap: 30px;
 }
 .basic .cards p {
   color: var(--gray-blue-grey-blue-50, #4D5E80);

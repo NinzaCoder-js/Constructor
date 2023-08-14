@@ -36,6 +36,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
     padding-bottom: 20px;
     border-bottom: 2px solid var(--gray-blue-grey-blue-95, #EDEFF2);
 
@@ -76,7 +78,7 @@ nav {
           padding: 3px;
         }
 
-        .dots {
+        .points {
           display: flex;
           align-items: center;
           gap: 3px;
@@ -89,6 +91,7 @@ nav {
     }
 
     .search {
+      width: 298px;
       order: 3;
       display: flex;
       align-items: center;
@@ -105,16 +108,27 @@ nav {
       }
     }
 
-    .me {
+    .account-circle {
       order: 5;
       display: flex;
       align-items: center;
       gap: 10px;
 
-      svg {
-        width: 30px;
-        height: 30px;
+      p {
+        color: #6B7A99;
+font-feature-settings: 'clig' off, 'liga' off;
+
+font-size: 13px;
+font-style: normal;
+font-weight: 700;
+line-height: 25px; /* 192.308% */
       }
+
+      // svg {
+      //   width: 30px;
+      //   height: 30px;
+      // }
+
     }
 
     .profile {
@@ -123,13 +137,6 @@ nav {
       gap: 15px;
       align-items: center;
       padding-left: 30px;
-
-      p {
-        color: var(--gray-blue-grey-blue-60, #6B7A99);
-        font-size: 13px;
-        font-style: normal;
-        font-weight: 700;
-      }
 
       .images {
         display: flex;
@@ -285,8 +292,19 @@ nav {
   }
 
   .cards1 {
+    position: relative;
     display: flex;
     gap: 30px;
+
+    .lineman {
+      position: absolute;
+      width: 2px;
+      height: 40px;
+      background-color: red;
+      left: 367px;
+      top: 65px;
+      border-radius: 1px;
+    }
 
     .main-card {
       width: 350px;
@@ -433,7 +451,7 @@ nav {
     .graph-groups {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      gap: 40px;
       padding: 15px;
       border-bottom: 2px solid var(--gray-blue-grey-blue-95, #EDEFF2);
 
@@ -845,6 +863,10 @@ nav {
             font-style: normal;
             font-weight: 900;
           }
+
+          .topman a {
+            color: var(--purple-purple, #83F);
+          }
         }
       }
 
@@ -925,32 +947,14 @@ nav {
   .cards {
 
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 30px;
 
-    .item1 {
-      order: 1;
+    .leto-card {
+      display: flex;
+      gap: 30px;
     }
 
-    .item2 {
-      order: 2;
-    }
-
-    .item3 {
-      order: 3;
-    }
-
-    .item4 {
-      order: 4;
-    }
-
-    .item5 {
-      order: 5;
-    }
-
-    .item6 {
-      order: 6;
-    }
 
     p {
       color: var(--gray-blue-grey-blue-50, #4D5E80);
